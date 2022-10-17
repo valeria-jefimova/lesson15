@@ -3,6 +3,8 @@ import prettytable
 
 con = sqlite3.connect(":memory:")
 cur = con.cursor()
+con = sqlite3.connect(":memory:")
+cur = con.cursor()
 sqlite_query = ("CREATE TABLE animals ("
                 "Id integer PRIMARY KEY AUTOINCREMENT, "
                 "AnimalType varchar(50) NOT NULL, "
